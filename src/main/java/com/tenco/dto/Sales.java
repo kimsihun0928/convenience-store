@@ -3,7 +3,7 @@ package com.tenco.dto;
 import lombok.*;
 
 import java.math.BigDecimal;
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -15,8 +15,9 @@ public class Sales {
 
     private int id;
     private int productId;
+    private String productName;
     private int quantity;
     private BigDecimal unitPrice;
-    private LocalTime soldAt;
+    private LocalDateTime soldAt;
 
 }
